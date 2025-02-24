@@ -1,6 +1,6 @@
 package lager
 
-import "github.com/bytedance/sonic"
+import "encoding/json"
 
 // LogLevel is a user defined variable of type int
 type LogLevel int
@@ -36,7 +36,7 @@ func FormatLogLevel(x LogLevel) string {
 func (x LogLevel) MarshalJSON() ([]byte, error) {
 	// var level string
 	var level = FormatLogLevel(x)
-	return sonic.Marshal(level)
+	return json.Marshal(level)
 }
 
 // Data is a map
@@ -53,5 +53,5 @@ type LogFormat struct {
 
 // ToJSON which converts data of log file in to JSON file
 func (log LogFormat) ToJSON() ([]byte, error) {
-	return sonic.Marshal(log)
+	return json.Marshal(log)
 }

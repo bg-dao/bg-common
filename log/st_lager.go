@@ -1,7 +1,7 @@
 package log
 
 import (
-	"github.com/yunbi-dao/agent-common/log/lager"
+	"github.com/bg-dao/bg-common/log/lager"
 	"io"
 	"log"
 	"os"

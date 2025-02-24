@@ -1,8 +1,8 @@
 package log
 
 import (
-	"github.com/bytedance/sonic"
-	"github.com/yunbi-dao/agent-common/log/lager"
+	"encoding/json"
+	"github.com/bg-dao/bg-common/log/lager"
 	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"log"
@@ -197,6 +197,6 @@ func Init() error {
 }
 
 func marshalDefinition() string {
-	data, _ := sonic.Marshal(PassLagerDefinition)
+	data, _ := json.Marshal(PassLagerDefinition)
 	return string(data)
 }

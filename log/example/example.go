@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/yunbi-dao/agent-common/log"
-	"github.com/yunbi-dao/agent-common/log/lager"
+	"github.com/bg-dao/bg-common/log"
+	"github.com/bg-dao/bg-common/log/lager"
 )
 
 func main() {

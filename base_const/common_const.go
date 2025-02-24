@@ -1,41 +1,5 @@
 package baseConst
 
-const (
-	MqHandleShoeModelTagTopic    = "com.vt.service.mq.handle.shoe.model.tag.topic"
-	MqHandleShoeModelTagGroup    = "com.vt.service.mq.handle.shoe.model.tag.group"
-	MqHandleShoeModelTagConsumer = "com.vt.service.mq.handle.shoe.model.tag.consumer"
-)
-
-const (
-	MqHandleShoeModelTrainTopic    = "com.vt.service.mq.handle.shoe.model.train.topic"
-	MqHandleShoeModelTrainGroup    = "com.vt.service.mq.handle.shoe.model.train.group"
-	MqHandleShoeModelTrainConsumer = "com.vt.service.mq.handle.shoe.model.train.consumer"
-)
-
-const (
-	MqHandleShoeModelPublishTopic    = "com.vt.service.mq.handle.shoe.model.publish.topic"
-	MqHandleShoeModelPublishGroup    = "com.vt.service.mq.handle.shoe.model.publish.group"
-	MqHandleShoeModelPublishConsumer = "com.vt.service.mq.handle.shoe.model.publish.consumer"
-)
-
-const (
-	MqHandleClothingModelTagTopic    = "com.vt.service.mq.handle.clothing.model.tag.topic"
-	MqHandleClothingModelTagGroup    = "com.vt.service.mq.handle.clothing.model.tag.group"
-	MqHandleClothingModelTagConsumer = "com.vt.service.mq.handle.clothing.model.tag.consumer"
-)
-
-const (
-	MqHandleClothingModelTrainTopic    = "com.vt.service.mq.handle.clothing.model.train.topic"
-	MqHandleClothingModelTrainGroup    = "com.vt.service.mq.handle.clothing.model.train.group"
-	MqHandleClothingModelTrainConsumer = "com.vt.service.mq.handle.clothing.model.train.consumer"
-)
-
-const (
-	MqHandleClothingModelPublishTopic    = "com.vt.service.mq.handle.clothing.model.publish.topic"
-	MqHandleClothingModelPublishGroup    = "com.vt.service.mq.handle.clothing.model.publish.group"
-	MqHandleClothingModelPublishConsumer = "com.vt.service.mq.handle.clothing.model.publish.consumer"
-)
-
 // 处理状态: 20.清洗待处理 21.清洗中 22.清洗失败 23.清洗成功 30.打标待处理 31.打标中 32.打标失败 33.打标成功 40.训练待处理 41.训练中 42.训练失败 43.训练成功 50.发布待处理 51.发布中 52.发布失败 53.发布成功
 var (
 	ModelHandleCleanPending   = &ModelHandleStatus{Code: 20, Msg: "清洗待处理"}
