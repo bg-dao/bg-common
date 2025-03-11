@@ -63,14 +63,3 @@ func GetModelHandleStatus(handleStatus int) *ModelHandleStatus {
 		return nil
 	}
 }
-
-type ComfyHandleStatus struct {
-	Code string `json:"code"`
-	Msg  string `json:"msg"`
-}
-
-var (
-	ComfyHandleWaiting    = &ComfyHandleStatus{Code: "waiting", Msg: "等待中"}
-	ComfyHandleProcessing = &ComfyHandleStatus{Code: "processing", Msg: "处理中"}
-	ComfyHandleDone       = &ComfyHandleStatus{Code: "done", Msg: "处理完成"}
-)
