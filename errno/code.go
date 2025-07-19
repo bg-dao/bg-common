@@ -6,7 +6,7 @@ var (
 	AuthError             = &Errno{Code: 2, Msg: "Login session has expired"}
 	AccountOrPwdError     = &Errno{Code: 3, Msg: "Incorrect account or password"}
 	HandleError           = &Errno{Code: 4, Msg: "Server is busy, please try again later"}
-	ChatContextBizIdError = &Errno{Code: 5, Msg: "Chat context business ID has expired"}
+	ChatContextBizIdError = &Errno{Code: 5, Msg: "Chat context bizId has expired"}
 	DataNotExistError     = &Errno{Code: 6, Msg: "Data does not exist"}
 	OtherError            = &Errno{Code: 7, Msg: "Other error"}
 )
